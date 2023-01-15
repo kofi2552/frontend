@@ -1,0 +1,58 @@
+.mainfilterbox {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.mainfilterbox ul {
+  display: flex;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.mainfilterbox li {
+  padding-right: 20px;
+}
+
+.mainfilterbox li a {
+  height: 44px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: #2e9b9b;
+  border: 1px solid #b9e2e2;
+  margin: 0;
+}
+
+.mainfilterbox li .item {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 16px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #2e9b9b;
+  background-color: #f6ffff;
+  font-size: 14px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.mainfilterbox li a:hover {
+  color: #374957;
+}
+
+.mainfilterbox li a.active {
+  color: #374957;
+  border-bottom: 1px solid #80909b;
+}
+
+.mainfilterbox .tag-list .icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #2e9b9b;
+  margin-right: 5px;
+}
