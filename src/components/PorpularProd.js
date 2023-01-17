@@ -5,7 +5,7 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 const PorpularProd = () => {
   return (
     <div className="product-card">
-      <img src="images/img_4.jpg" className="img-fluid" alt="" />
+      <img src="images/img_4.jpg" className="img-fluid" alt="" loading="lazy" />
       <Link to="product/:id">
         <div className="product-details">
           <div className="animate">

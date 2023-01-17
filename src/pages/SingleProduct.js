@@ -20,6 +20,7 @@ const SingleProduct = () => {
               <img
                 src="https://images.unsplash.com/photo-1598770220477-cec551a23f53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXJ0aXN0aWN8ZW58MHx8MHx8&w=1000&q=80"
                 alt=""
+                loading="lazy"
               />
               <div className="title-text">
                 <h3 className="asset-name m-0">

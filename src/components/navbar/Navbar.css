@@ -172,13 +172,14 @@ li {
 }
 
 .navmenu-links-container .nav-menu-link {
-  color: #fff;
+  /* color: #fff; */
+  color: #374957;
   text-transform: capitalize;
   font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   text-align: center;
-  padding: 6px 0px;
+  padding: 8px 0px;
 }
 
 .nav-menu-link2 {
@@ -208,12 +209,12 @@ li {
 }
 
 .navbar-menu-container-links-sign .button2 {
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   color: #ffff;
   background: #ffa200;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   border-radius: 5px;
   border: 0;
@@ -222,19 +223,20 @@ li {
 }
 .navbar-menu-container-links-sign .button {
   padding: 0.5rem 1.5rem;
-  color: #ffff;
-  background: teal;
+  color: teal;
+  background: transparent;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   border-radius: 5px;
-  border: 0;
+  border: 1px solid teal;
   outline: none;
   cursor: pointer;
 }
 
 .navbar-menu-container.active .close-me {
+  color: #00515f !important;
   z-index: 9999;
   position: fixed;
   top: 20px;
@@ -325,7 +327,8 @@ li {
 
   .navbar-menu-container.active {
     position: fixed;
-    background: var(---nav-bg-color-teal-dark);
+    /* background: var(---nav-bg-color-teal-dark); */
+    background: #fff;
     top: 0;
     padding-top: 80px;
     right: 0;
