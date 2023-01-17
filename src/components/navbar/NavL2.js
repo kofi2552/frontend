@@ -59,7 +59,7 @@ const NavL2 = () => {
                 <NavLink to="join-us">Our Community</NavLink>
               </li>
               <li>
-                <NavLink to="legal/partner-us">Partner with us</NavLink>
+                <NavLink to="legal/partner-us">Partnerships</NavLink>
               </li>
               <li>
                 <NavLink to="blog">Blog</NavLink>

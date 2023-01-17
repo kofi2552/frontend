@@ -58,7 +58,7 @@ const Landing = () => {
                         width: "100%",
                         height: "80vh",
                       }}
-                      lazy
+                      loading="lazy"
                     />
                     <div className="darken-layer"></div>
                     <div className="slide">

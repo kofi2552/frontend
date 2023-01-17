@@ -13,7 +13,7 @@ const Signup = () => {
             <div className="logo">
               <h3>GetArt</h3>
             </div>
-            <div className="login-card">
+            <div className="login-card mb-5">
               <h6 className="title">Create an account</h6>
               <form action="" className="form-group">
                 <div className="mb-4">
