@@ -1,13 +1,8 @@
-.mainfilterbox {
-  box-sizing: border-box;
-  outline: none;
-}
-
 .mainfilterbox ul {
+  width: 100%;
   display: flex;
   overflow-x: auto;
   margin: 0;
-  padding: 0;
 }
 
 .mainfilterbox li {

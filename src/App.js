@@ -25,6 +25,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 import SingleProduct from "./pages/SingleProduct";
 import Checkout from "./pages/Checkout";
 import LandMain from "./pages/LandMain";
+import Test from "./pages/Test";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="pricing" element={<Pricing />} />
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/test-page" element={<Test />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/signup" element={<Signup />} />

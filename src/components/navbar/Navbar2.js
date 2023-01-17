@@ -23,11 +23,9 @@ const Navbar2 = () => {
     <div className="_navbar" id="home">
       <div className="navbar-links">
         <div className="navbar-links-logo">
-          <h2>
-            <Link to="/home" className="text-white">
-              GetArt
-            </Link>
-          </h2>
+          <Link to="/home" className="text-white">
+            GetArt
+          </Link>
         </div>
         <div className="navbar-links-container">
           <ul>
@@ -94,94 +92,97 @@ const Navbar2 = () => {
         </ul>
       </div>
       <div className="navbar-menu">
-        {toggleMenu ? (
+        <div className="menu-icon-container">
+          {toggleMenu ? (
+            <RiCloseLine
+              color="#fff"
+              size={30}
+              className="close-menu-icon"
+              onClick={() => setToggleMenu(false)}
+            />
+          ) : (
+            <RiMenu3Line
+              color="#fff"
+              size={30}
+              className="open-menu-icon"
+              onClick={() => setToggleMenu(true)}
+            />
+          )}
+        </div>
+        <div
+          className={toggleMenu ? "blur-shadow" : ""}
+          onClick={() => setToggleMenu(false)}
+        ></div>
+
+        <div
+          className={
+            toggleMenu
+              ? "navbar-menu-container active"
+              : "navbar-menu-container"
+          }
+        >
           <RiCloseLine
             color="#fff"
             size={30}
-            className="close-menu-icon"
+            className="close-me"
             onClick={() => setToggleMenu(false)}
           />
-        ) : (
-          <RiMenu3Line
-            color="#fff"
-            size={30}
-            className="open-menu-icon"
-            onClick={() => setToggleMenu(true)}
-          />
-        )}
-        {toggleMenu ? (
-          <div className="nav">
-            <div
-              className={
-                toggleMenu
-                  ? "navbar-menu-container mobile-nav-active"
-                  : "navbar-menu-container"
-              }
-            >
-              <div className="navbar-menu-container-links">
-                <div className="navmenu-links-container">
-                  <li>
-                    <Link to="/projects" className="nav-menu-link">
-                      Assets
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/projects" className="nav-menu-link">
-                      Graphic Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/team" className="nav-menu-link">
-                      Video Editing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="nav-menu-link">
-                      Photos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="nav-menu-link">
-                      Web Ui/Ux
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="nav-menu-link">
-                      Artistic
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="nav-menu-link">
-                      African
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="nav-menu-link">
-                      Pricing
-                    </Link>
-                  </li>
-                </div>
-                <div className="navbar-menu-container-links-sign">
-                  <li>
-                    <Link to="/contact" className="nav-menu-link2 mb-3">
-                      Sell Here
-                    </Link>
-                  </li>
-                  <div className="mb-3">
-                    <Link to="/contact" className="nav-menu-item button">
-                      Login
-                    </Link>
-                  </div>
-                  <div>
-                    <Link to="/contact" className="nav-menu-item button2">
-                      Sign up
-                    </Link>
-                  </div>
-                </div>
-              </div>
+
+          <div className="navmenu-links-container">
+            <li>
+              <Link to="/projects" className="nav-menu-link">
+                Assets
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" className="nav-menu-link">
+                Graphic Design
+              </Link>
+            </li>
+            <li>
+              <Link to="/team" className="nav-menu-link">
+                Video Editing
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="nav-menu-link">
+                Photos
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="nav-menu-link">
+                Web Ui/Ux
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="nav-menu-link">
+                Artistic
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="nav-menu-link">
+                African
+              </Link>
+            </li>
+          </div>
+          <div className="navbar-menu-container-links-sign">
+            <li>
+              <Link to="/sell" className="nav-menu-link2 mb-3">
+                Sell Here
+              </Link>
+            </li>
+            <div className="mb-3">
+              <Link to="/login" className="nav-menu-item button">
+                Login
+              </Link>
+            </div>
+            <div>
+              <Link to="/signup" className="nav-menu-item button2">
+                Sign up
+              </Link>
             </div>
           </div>
-        ) : null}
+        </div>
       </div>
     </div>
   );

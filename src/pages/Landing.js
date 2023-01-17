@@ -60,6 +60,7 @@ const Landing = () => {
                       }}
                       lazy
                     />
+                    <div className="darken-layer"></div>
                     <div className="slide">
                       <h3 className="text-white --big-headings">
                         {item.title}

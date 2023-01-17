@@ -10,6 +10,7 @@ import { Sidebar } from "./Sidebar";
 const Home = () => {
   const [ToggleSideBar, setToggleSideBar] = useState(false);
   const [filterhead, setFilterhead] = useState(false);
+  const [scrollfx, setScrollfx] = useState(0);
 
   const FixFilterheader = () => {
     if (window.scrollY >= 80) {
@@ -19,6 +20,16 @@ const Home = () => {
     }
   };
   window.addEventListener("scroll", FixFilterheader);
+
+  const onScrollT = () => {
+    if (window.scrollY >= 80) {
+      setScrollfx(true);
+    } else {
+      setScrollfx(false);
+    }
+  };
+
+  window.addEventListener("scroll", onScrollT);
 
   return (
     <div>
@@ -62,11 +73,15 @@ const Home = () => {
       <section className="home-wrapper">
         <div className="container-fluid">
           <div className="display-products">
-            <div className={ToggleSideBar ? "side-toggled" : "collapsed"}>
-              <div
-                className={ToggleSideBar ? "sidebar-opened" : "side-collapsed"}
-              >
-                <Sidebar />
+            <div
+              className={
+                ToggleSideBar ? "sidebar-toggle active" : "sidebar-toggle"
+              }
+            >
+              <div className="side-container">
+                <div className={scrollfx ? "fix-sidebar" : "unfix-sidebar"}>
+                  <Sidebar />
+                </div>
               </div>
               <div className="product-card-lists">
                 <h3 className="text-center section-heading">All Assets</h3>

@@ -54,7 +54,7 @@ export const Sidebar = () => {
             </ul>
           </div>
         </div>
-        <div className="filter-card mb-2">
+        <div className="filter-card mb-3">
           <h5 className="filter-title">License</h5>
           <div className="d-flex">
             <h5 className="subtitle license">Free</h5>
@@ -63,7 +63,19 @@ export const Sidebar = () => {
         </div>
         <div className="filter-card mb-2">
           <h5 className="filter-title">Collections</h5>
-          <div>
+          <div className="pb-2">
+            <h5 className="subtitle">
+              <MdOutlineCategory size={20} className="z-icon" />
+              Featured Collections
+            </h5>
+            <h5 className="subtitle">
+              <MdOutlineVideoLibrary size={20} className="z-icon" />
+              Recently Added
+            </h5>
+            <h5 className="subtitle">
+              <MdOutlineDraw size={20} className="z-icon" />
+              Trending Assets
+            </h5>
             <h5 className="subtitle">
               <MdOutlineCategory size={20} className="z-icon" />
               Featured Collections
