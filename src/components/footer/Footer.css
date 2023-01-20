@@ -108,6 +108,7 @@ a {
     display: flex;
     justify-content: flex-start;
   }
+
   .footer .right {
     display: flex;
     justify-content: flex-start;
@@ -117,6 +118,7 @@ a {
     display: flex;
     flex-direction: column;
   }
+
   .footer .nave .nav-link {
     line-height: 1.7rem !important;
   }

@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 // import { TbPremiumRights } from "react-icons/tb";
 import { GrLicense } from "react-icons/gr";
+import Categories from "../components/categories/Categories";
 
 const SingleProduct = () => {
   return (
@@ -100,6 +101,9 @@ const SingleProduct = () => {
               provide some or all the Services and features available or
               deactivate and delete.
             </p>
+          </div>
+          <div className="related-tags">
+            <Categories />
           </div>
           <div className="related-content">
             <h5 className="mb-3">You may also like</h5>
