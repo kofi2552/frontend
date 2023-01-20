@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+
 const ProductCard = (props) => {
+  let location = useLocation();
   return (
     <div className="product-card">
       <img src="images/img_4.jpg" className="img-fluid" alt="" loading="lazy" />
-      <Link to="product/:id">
+      <Link
+        to={`${
+          location.pathname === "/store" ? "product/:id" : "/store/product/:id"
+        }`}
+      >
         <div className="product-details">
           <div className="animate">
             <h3 className="description">Newest Listing Product</h3>

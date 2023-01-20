@@ -26,18 +26,20 @@ import SingleProduct from "./pages/SingleProduct";
 import Checkout from "./pages/Checkout";
 import LandMain from "./pages/LandMain";
 import Test from "./pages/Test";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<LandMain />}>
+          <Route path="/" element={<LandMain />}>
             <Route index element={<Landing />} />
             <Route path="sell" element={<Sell />} />
             <Route path="pricing" element={<Pricing />} />
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/test-page" element={<Test />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
@@ -58,7 +60,7 @@ function App() {
             </Route>
           </Route>
 
-          <Route path="/" element={<Layout />}>
+          <Route path="/store" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="trending" element={<Trending />} />
             <Route path="product/:id" element={<SingleProduct />} />

@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 // import CustomInput from "../components/CustomInput";
 import Container from "../components/Container";
 import Nav2Home from "../components/navbar/Nav2Home";
+import Banner from "../components/Banner";
 
 const Sell = () => {
   return (
     <div>
       <Nav2Home />
+      <section className="pricing-wrapper">
+        <Banner />
+      </section>
       <Container class1="sell-page-wrapper">
         <div className="main-content">
           <div className="sell-body">

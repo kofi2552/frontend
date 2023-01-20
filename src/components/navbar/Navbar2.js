@@ -20,7 +20,7 @@ const Navbar2 = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="_navbar" id="home">
+    <div className="_navbar" id="landing">
       <div className="navbar-links">
         <div className="navbar-links-logo">
           <Link to="/home" className="text-white">
@@ -75,7 +75,7 @@ const Navbar2 = () => {
             </Link>
           </li>
           <li>
-            <Link to="pricing" className="nav-link nav-item2">
+            <Link to="pricing" className="nav-link nav-item">
               Pricing
             </Link>
           </li>

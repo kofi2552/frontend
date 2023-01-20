@@ -26,6 +26,10 @@ li {
   z-index: 999;
 }
 
+#landing {
+  background-color: #2395b1 !important;
+}
+
 ._navbar ul {
   padding: 0;
   margin: 0;
@@ -93,8 +97,8 @@ li {
   line-height: 40px;
 }
 
-._navbar .nav-item {
-  color: #cee7e4;
+#landing .nav-item {
+  color: #fff;
   margin: 0 8px;
   cursor: pointer;
 }
@@ -105,8 +109,8 @@ li {
   cursor: pointer;
 }
 
-._navbar .nav-link:hover {
-  color: #fff;
+#landing .nav-link:hover {
+  color: #a6f2fd;
 }
 
 .navbar-sign .button2 {
