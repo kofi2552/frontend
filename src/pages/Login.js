@@ -2,17 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CustomInput from "../components/CustomInput";
 
+import logoclong from "../assets/logo_2_color.png";
+
 const Login = () => {
   return (
     <div>
       <div className="login-wrapper">
         <div className="art-wrapper">
-          <img src="images/freepik-2-2000.webp" alt="getart" />
+          <img src="images/freepik-2-2000.webp" alt="getarts" />
         </div>
         <div className="content-wrapper">
           <div className="main-content">
             <div className="logo">
-              <h3>GetArt</h3>
+              <img src={logoclong} alt="" width="15%" />
             </div>
             <div className="login-card">
               <h6 className="title">Welcome Back!</h6>

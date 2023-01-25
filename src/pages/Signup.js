@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CustomInput from "../components/CustomInput";
+
+import logoclong from "../assets/logo_2_color.png";
 const Signup = () => {
   return (
     <div>
@@ -11,7 +13,7 @@ const Signup = () => {
         <div className="content-wrapper">
           <div className="main-content">
             <div className="logo">
-              <h3>GetArt</h3>
+              <img src={logoclong} alt="" width="15%" />
             </div>
             <div className="login-card mb-5">
               <h6 className="title">Create an account</h6>
