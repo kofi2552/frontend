@@ -29,7 +29,7 @@ const Signup = () => {
                     placeholder="Mobile Number"
                   />
                 </div>
-                <div className="mb-1">
+                <div className="mb-4">
                   <CustomInput
                     type="password"
                     name="password"

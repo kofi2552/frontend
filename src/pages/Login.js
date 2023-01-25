@@ -20,7 +20,7 @@ const Login = () => {
                 <div className="mb-4">
                   <CustomInput type="text" name="email" placeholder="Email" />
                 </div>
-                <div className="mb-1">
+                <div className="mb-2">
                   <CustomInput
                     type="password"
                     name="password"

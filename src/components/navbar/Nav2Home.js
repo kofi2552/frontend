@@ -3,25 +3,25 @@ import { NavLink, Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 
+import logoclong from "../../assets/logo3_clong.png";
+
 const Nav2Home = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="nav-home-2">
       <div className="nav-bar">
         <div className="nav-logo">
-          <h3>
-            <Link to="/">
-              <strong>GetArt</strong>
-            </Link>
-          </h3>
+          <Link to="/">
+            <img src={logoclong} alt="" width="60%" />
+          </Link>
         </div>
         <div className="nav-menu">
           <ul>
             <li>
-              <NavLink to="/home/sell">Sell Here</NavLink>
+              <NavLink to="/sell">Sell Here</NavLink>
             </li>
             <li>
-              <NavLink to="/home/pricing">Pricing</NavLink>
+              <NavLink to="/pricing">Pricing</NavLink>
             </li>
             <li>
               <NavLink to="/login">Log in</NavLink>
@@ -55,10 +55,10 @@ const Nav2Home = () => {
         <div className="mobile-nav-menu">
           <ul>
             <li>
-              <NavLink to="/home/sell">Sell Here</NavLink>
+              <NavLink to="/sell">Sell Here</NavLink>
             </li>
             <li>
-              <NavLink to="/home/pricing">Pricing</NavLink>
+              <NavLink to="/pricing">Pricing</NavLink>
             </li>
             <li>
               <NavLink className="login-btn" to="/login">
