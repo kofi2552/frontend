@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import Nav2Home from "../components/navbar/Nav2Home";
 import Banner from "../components/Banner";
+import CustomInput from "../components/CustomInput";
 
 const Sell = () => {
   return (
@@ -15,20 +16,44 @@ const Sell = () => {
       <Container class1="sell-page-wrapper">
         <div className="main-content">
           <div className="sell-body">
-            <div className="gif-container">
-              <img
-                src="https://media.tenor.com/fBaZ3C9nTfAAAAAC/dance-cartoon.gif"
-                alt="coming soon"
-              />
-            </div>
-            <h1 className="heading text-center faded-text">Coming Soon!</h1>
-
-            <div className="sell-account-links">
-              <p className="text-center faded-text">
-                <Link to="/login">Log in</Link> now or{" "}
-                <Link to="/signup">Sign up</Link> with us and start selling your
-                creative works.
-              </p>
+            <div className="create-sell-account">
+              <div>
+                <h3 className="heading">Early Bird Offer</h3>
+                <p className="faded-text">
+                  Kindly enter your email to recieve our newsletter on time once
+                  this feature is up and running.
+                </p>
+                <form action="" className="form-group">
+                  <div className="mb-4">
+                    <CustomInput
+                      type="text"
+                      name="name"
+                      placeholder="Username"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <CustomInput type="text" name="email" placeholder="Email" />
+                  </div>
+                  <div className="mb-4">
+                    <CustomInput
+                      type="tel"
+                      name="mobile"
+                      placeholder="Mobile Number"
+                    />
+                  </div>
+                  <div className="login-btn-container mb-3">
+                    <button type="submit" className="button-login">
+                      Submit
+                    </button>
+                    <p className="faded-text">
+                      Don't have an account?
+                      <Link to="/signup" className="text-center">
+                        Sign up
+                      </Link>
+                    </p>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

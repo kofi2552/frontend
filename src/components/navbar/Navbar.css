@@ -14,20 +14,51 @@ li {
   display: inline-block;
 }
 
+.text--small {
+  font-size: 12px !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+}
+
+.text--normal {
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+}
+
+.text---heading {
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 700 !important;
+}
+
 ._navbar {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
-  background: var(---nav-bg-color-teal-dark);
+  background: #066374;
+  /* background: var(---nav-bg-color-teal-dark); */
   width: 100% !important;
   margin: 0 auto;
   z-index: 999;
 }
 
 #landing {
-  background-color: #2395b1 !important;
+  background-color: #02758a !important;
+  /* max-width: 1400px; */
+  /* padding: 0 100px; */
+  /* background-color: #2395b1 !important; */
+  /* position: sticky;
+  top: 0; */
+}
+
+#landing .nav-container {
+  display: flex;
+  width: 1250px;
+  /* background-color: #ffa200; */
+  margin: 0 auto;
 }
 
 ._navbar ul {
@@ -92,9 +123,15 @@ li {
 ._navbar .nav-link {
   text-transform: capitalize;
   font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 40px;
+}
+
+._navbar .nav-item {
+  color: #fff;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
 #landing .nav-item {
@@ -103,7 +140,17 @@ li {
   cursor: pointer;
 }
 
+#landing .nav-link {
+  color: #e6f6f8;
+}
+
 ._navbar .nav-item2 {
+  color: #ffb027;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+#landing .nav-item2 {
   color: #ffb027;
   margin: 0 6px;
   cursor: pointer;
@@ -126,6 +173,7 @@ li {
   outline: none;
   cursor: pointer;
 }
+
 .navbar-sign .button {
   padding: 0.5rem 1.5rem;
   color: #ffff;
@@ -160,56 +208,76 @@ li {
 .navbar-menu-container {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  max-width: 200px;
-  height: 100%;
-  min-height: 100vh;
-  z-index: 500;
+  width: 100%;
+  height: auto;
+  z-index: 500 !important;
 }
+
+/* #landing-page .navbar-menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 500 !important;
+} */
 
 .navmenu-links-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: right;
+  text-align: left;
+  padding: 10px 20px;
   /* background-color: #c9bda9; */
 }
 
 .navmenu-links-container .nav-menu-link {
-  /* color: #fff; */
-  color: #374957;
+  color: #303233;
   text-transform: capitalize;
   font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  padding: 8px 0px;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding: 5px 0px;
+}
+
+#landing-page .navmenu-links-container .nav-menu-link {
+  color: #fff;
 }
 
 .nav-menu-link2 {
-  color: #ffa200;
+  color: #303233;
   text-transform: capitalize;
   font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   padding: 5px 0px;
+}
+
+#landing-page .nav-menu-link2 {
+  color: #fff;
 }
 
 .navbar-menu-container-links-sign {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
-  text-align: right;
+  /* margin-top: 20px; */
+  text-align: left;
+  padding: 20px;
+  background-color: #f2f8f8;
 }
 
-.nav-menu-item {
+#landing-page .navbar-menu-container-links-sign {
+  background-color: unset;
+}
+
+.navbar-menu-container-links-sign .nav-menu-item {
   text-transform: capitalize;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .navbar-menu-container-links-sign .button2 {
@@ -217,7 +285,7 @@ li {
   color: #ffff;
   background: #ffa200;
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   border-radius: 5px;
@@ -230,7 +298,7 @@ li {
   color: teal;
   background: transparent;
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   border-radius: 5px;
@@ -239,13 +307,19 @@ li {
   cursor: pointer;
 }
 
-.navbar-menu-container.active .close-me {
+#landing-page .navbar-menu-container-links-sign .button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+/* .navbar-menu-container.active .close-me {
   color: #00515f !important;
   z-index: 9999;
   position: fixed;
   top: 20px;
-  right: 20px;
-}
+  left: 20px;
+} */
 
 /* .navbar-menu .open-menu-icon {
   z-index: 9999;
@@ -261,8 +335,9 @@ li {
   height: 100vh;
   width: 100%;
   background-color: #0a2a2e;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 200;
+  transition: all 0.4s;
 }
 
 .navbar-menu-container-links .menu-logo {
@@ -306,7 +381,7 @@ li {
     justify-content: flex-start;
   }
 
-  /* ------------------//RIGHT SIDE -------------------*/
+  /* ------------------//  LEFT NAV SIDE -------------------*/
 
   ._navbar {
     overflow: hidden;
@@ -318,31 +393,48 @@ li {
   }
 
   .navbar-menu-container {
-    width: 200px;
+    width: 180px;
     min-height: 100vh;
-    padding: 10px 30px;
+    height: auto;
     position: absolute;
     top: 0;
-    padding-top: 80px;
-    right: -100%;
-    transition: all 0.4s ease;
-    z-index: 500;
+    left: -100%;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+
+  #landing-page .navbar-menu-container {
+    width: 200px;
+    min-height: 100vh;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #017e94;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: all 0.3s ease;
   }
 
   .navbar-menu-container.active {
-    position: fixed;
-    /* background: var(---nav-bg-color-teal-dark); */
-    background: #fff;
-    top: 0;
-    padding-top: 80px;
-    right: 0;
-    transition: all 0.4s ease;
-    z-index: 500;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  #landing-page .navbar-menu-container.active {
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
   }
 
   /* .navmenu-links-container {
     margin-top: 60px;
   } */
+
+  .nv-mobile-slider {
+    z-index: 600;
+  }
 }
 
 @media screen and (max-width: 768px) {
